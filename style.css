@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+.header {
+    margin: 10px;
+}
+
+.header-img {
+    border-radius: 50%;
+    position: relative;
+}
+
+.header-banniere {
+   border:solid 1px black;
+   border-radius: 10px;
+   background-color: orange;
+   position: relative;
+   margin-top: -20px;
+}
+
+.header-title {
+    text-transform: uppercase;
+    text-align: center;
+}
