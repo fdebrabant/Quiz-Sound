@@ -33,3 +33,42 @@
 .button-react-max-width {
     max-width: 235px;
 }
+
+.ranking-buttons div button {
+    max-width: 164px;
+    width: 100%;
+}
+
+.first {
+    padding-top: 100px;
+}
+
+.second {
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.third {
+    padding-top: 10px;
+    margin-top: 90px;
+}
+
+@media only screen and (max-width: 575px) {
+    .ranking-buttons {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .ranking-buttons {
+        display: block;
+        text-align: center;
+    }
+    .ranking-buttons div {
+        padding: 0;
+    }
+    .ranking-buttons div button {
+        width: 164px;
+    }
+}
