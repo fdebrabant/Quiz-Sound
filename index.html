@@ -17,12 +17,17 @@
     <title>Quiz Sounds</title>
   </head>
     <body>
-
+        <audio id="audio-jingle" src="sound/jingle.mp3" autoplay="false"></audio>
+        <audio id="audio-yay" src="sound/cheers.mp3" autoplay="false"></audio>
+        <audio id="audio-boo" src="sound/boo.mp3" autoplay="false"></audio>
+        <audio id="audio-first" src="sound/john-cena.mp3" autoplay="false"></audio>
+        <audio id="audio-second" src="sound/yay.mp3" autoplay="false"></audio>
+        <audio id="audio-third" src="sound/titanic.mp3" autoplay="false"></audio>
         <div class="container">
             <header>
                 <div class="header">
                     <div class="text-center">
-                        <img src="img/img_banniere/img-banniere.png" class="header-img" alt="...">
+                        <img src="img/img_banniere/img-banniere.jpg" class="header-img" alt="...">
                     </div>
                     <div class="header-banniere">
                         <h1 class="header-title">Quiz sounds</h1>
@@ -30,26 +35,26 @@
                 </div>  
             </header>
             <div class="jingle mt-4">
-                <button type="button" class="btn btn-outline-warning btn-block">Jingle</button>
+                <button type="button" class="btn btn-outline-warning btn-block" onclick="playSound('audio-jingle')">Jingle</button>
             </div>
             <div class="row my-4">
                 <div class="col">
-                    <button type="button" class="btn btn-outline-success button-react-max-width w-100 float-right">Yay!</button>
+                    <button type="button" class="btn btn-outline-success button-react-max-width w-100 float-right" onclick="playSound('audio-yay')">Yay!</button>
                 </div>
                 <div class="col">
-                    <button type="button" class="btn btn-outline-danger button-react-max-width w-100">Bhou!</button>
+                    <button type="button" class="btn btn-outline-danger button-react-max-width w-100" onclick="playSound('audio-boo')">Boo!</button>
                 </div>
             </div>
             <hr class="my-4" style="background-color: grey;">
             <div class="row row-cols-3 ranking-buttons">
                 <div class="col d-inline" style="padding-left: 0;">
-                    <button type="button" class="btn btn-outline-primary second">2nd</button>
+                    <button type="button" class="btn btn-outline-primary second" onclick="playSound('audio-second')">2nd</button>
                 </div>
                 <div class="col d-inline" style="padding: 0;">
-                    <button type="button" class="btn btn-outline-primary first">1st</button>
+                    <button type="button" class="btn btn-outline-primary first" onclick="playSound('audio-first')">1st</button>
                 </div>
                 <div class="col d-inline" style="padding-right: 0;">
-                    <button type="button" class="btn btn-outline-primary third">3th</button>
+                    <button type="button" class="btn btn-outline-primary third" onclick="playSound('audio-third')">3th</button>
                 </div>
             </div>
 
@@ -57,7 +62,8 @@
 
 
         </div>
-    
+
+        <script src="script/script.js"></script>
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
