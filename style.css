@@ -17,7 +17,8 @@
    border-radius: 10px;
    background-color: orange;
    position: relative;
-   margin-top: -20px;
+   max-width: 500px;
+   margin: -20px auto 0 auto;
 }
 
 .header-title {
@@ -33,6 +34,11 @@
 
 .button-react-max-width {
     max-width: 235px;
+}
+
+.hr-separator {
+    background-color: grey;
+    max-width: 500px;
 }
 
 .ranking-buttons div button {
