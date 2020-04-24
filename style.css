@@ -9,10 +9,11 @@
 .header-img {
     border-radius: 50%;
     position: relative;
+    width: 200px;
+    height: 200px;
 }
 
 .header-banniere {
-   border:solid 1px black;
    border-radius: 10px;
    background-color: orange;
    position: relative;
